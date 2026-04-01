@@ -149,11 +149,13 @@
     .pi-role{font-size:var(--text-xs);color:var(--color-text-muted);text-align:center;max-width:22ch;}
 
     /* Stats */
-    .stats-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1px;background:var(--color-divider);}
-    .stat{background:var(--color-surface);padding:var(--sp8) var(--sp5);text-align:center;}
-    .stat-n{font-family:var(--font-display);font-size:var(--text-2xl);color:var(--color-primary);display:block;line-height:1;margin-bottom:var(--sp2);}
-    .stat-l{font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.06em;}
-
+<div class="stats-strip" role="region" aria-label="Lab at a glance">
+  <div class="stat"><span class="stat-n" id="s-pub">0</span><span class="stat-l">Publications</span></div>
+  <div class="stat"><span class="stat-n" id="s-yr">0</span><span class="stat-l">Years at PGIMER</span></div>
+  <div class="stat"><span class="stat-n" id="s-students">0</span><span class="stat-l">PhD Students Guided</span></div>
+  <div class="stat"><span class="stat-n" id="s-collab">0</span><span class="stat-l">Int'l Collaborations</span></div>
+  <div class="stat"><span class="stat-n" id="s-states">0</span><span class="stat-l">VPD Surveillance States</span></div>
+</div>
     /* PI Profile */
     .pi-profile{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp12);align-items:start;}
     .pi-bio{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--sp6);}
@@ -713,6 +715,64 @@
             <div class="t-meta-row">
               <span class="t-meta-label">Email</span>
               <span class="t-meta-value placeholder t-editable">[ Email — to be added ]</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="t-card" id="member-vibha">
+        <div class="t-photo">
+          <img src="photos/vibha.jpg" alt="Ms. Vibha Garg" width="260" height="190" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="t-body">
+          <p class="t-name">Ms. Vibha Garg</p>
+          <p class="t-role">Lab Technician</p>
+          <div class="t-tags">
+            <span class="t-tag">Lab Technician</span>
+            <span class="t-tag">WHO Project</span>
+          </div>
+          <div class="t-meta">
+            <div class="t-meta-row">
+              <span class="t-meta-label">Project</span>
+              <span class="t-meta-value">WHO Diphtheria-Pertussis Surveillance</span>
+            </div>
+            <div class="t-meta-row">
+              <span class="t-meta-label">Domain</span>
+              <span class="t-meta-value">
+                <div class="t-research-tags">
+                  <span class="t-r-tag">VPD Surveillance</span>
+                  <span class="t-r-tag">Diphtheria</span>
+                  <span class="t-r-tag">Pertussis</span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="t-card" id="member-sakshi">
+        <div class="t-photo">
+          <img src="photos/sakshi.jpg" alt="Ms. Sakshi" width="260" height="190" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="t-body">
+          <p class="t-name">Ms. Sakshi</p>
+          <p class="t-role">Junior Research Fellow</p>
+          <div class="t-tags">
+            <span class="t-tag">JRF</span>
+            <span class="t-tag">WHO Project</span>
+          </div>
+          <div class="t-meta">
+            <div class="t-meta-row">
+              <span class="t-meta-label">Project</span>
+              <span class="t-meta-value">WHO Typhoid Surveillance</span>
+            </div>
+            <div class="t-meta-row">
+              <span class="t-meta-label">Domain</span>
+              <span class="t-meta-value">
+                <div class="t-research-tags">
+                  <span class="t-r-tag">Typhoid</span>
+                  <span class="t-r-tag">Surveillance</span>
+                </div>
+              </span>
             </div>
           </div>
         </div>
